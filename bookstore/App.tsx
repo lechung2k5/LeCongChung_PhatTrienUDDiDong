@@ -1,7 +1,8 @@
 import React from 'react';
-import { StyleSheet, View, ScrollView, SafeAreaView, StatusBar } from 'react-native';
-import Header from './components/Header';
+import { SafeAreaView, ScrollView, StatusBar, StyleSheet, View } from 'react-native';
 import BookCard from './components/BookCard';
+import CategoryChips from './components/CategoryChips';
+import Header from './components/Header';
 
 export default function App() {
   return (
@@ -18,6 +19,7 @@ export default function App() {
           <BookCard />
           <BookCard />
           <BookCard />
+          <CategoryChips/>
         </ScrollView>
       </View>
     </SafeAreaView>
