@@ -3,6 +3,7 @@ import { SafeAreaView, ScrollView, StatusBar, StyleSheet, View } from 'react-nat
 import BookCard from './components/BookCard';
 import CategoryChips from './components/CategoryChips';
 import Header from './components/Header';
+import BookGrid from './components/BookGrid';
 
 export default function App() {
   return (
@@ -20,6 +21,7 @@ export default function App() {
           <BookCard />
           <BookCard />
           <CategoryChips/>
+          <BookGrid/>
         </ScrollView>
       </View>
     </SafeAreaView>
