@@ -1,0 +1,341 @@
+/* ==========================================================================
+   Giao diện Basic / Tối Giản (Clean Minimalist Theme)
+   ========================================================================== */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  background-color: #f8f9fa;
+  color: #212529;
+  line-height: 1.5;
+  padding: 20px;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  background: #ffffff;
+  padding: 24px;
+  border: 1px solid #dee2e6;
+  border-radius: 6px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+/* Navigation Tabs */
+.nav-tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  padding-bottom: 16px;
+  margin-bottom: 20px;
+  border-bottom: 2px solid #e9ecef;
+}
+
+.nav-tab-btn {
+  background: #ffffff;
+  border: 1px solid #ced4da;
+  padding: 8px 14px;
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  color: #495057;
+  transition: all 0.15s ease-in-out;
+}
+
+.nav-tab-btn:hover {
+  background: #e9ecef;
+}
+
+.nav-tab-btn.active {
+  background: #0d6efd;
+  color: #ffffff;
+  border-color: #0d6efd;
+  font-weight: 600;
+}
+
+/* Headings */
+h1 {
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 16px;
+  color: #212529;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 8px;
+}
+
+h2 {
+  font-size: 18px;
+  font-weight: 600;
+  margin: 16px 0 10px 0;
+  color: #343a40;
+}
+
+h3 {
+  font-size: 16px;
+  font-weight: 600;
+  margin: 12px 0 8px 0;
+}
+
+p {
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+
+hr {
+  border: 0;
+  border-top: 1px solid #dee2e6;
+  margin: 16px 0;
+}
+
+/* Buttons */
+button, .btn {
+  display: inline-block;
+  font-family: inherit;
+  font-size: 13px;
+  font-weight: 500;
+  padding: 6px 12px;
+  border-radius: 4px;
+  border: 1px solid #ced4da;
+  background: #ffffff;
+  color: #212529;
+  cursor: pointer;
+  transition: background 0.1s;
+}
+
+button:hover:not(:disabled), .btn:hover:not(:disabled) {
+  background: #e9ecef;
+}
+
+button:disabled, .btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.btn-primary {
+  background: #0d6efd;
+  color: #ffffff;
+  border-color: #0d6efd;
+}
+
+.btn-primary:hover:not(:disabled) {
+  background: #0b5ed7;
+}
+
+.btn-danger {
+  background: #dc3545;
+  color: #ffffff;
+  border-color: #dc3545;
+}
+
+.btn-danger:hover:not(:disabled) {
+  background: #bb2d3b;
+}
+
+.btn-success {
+  background: #198754;
+  color: #ffffff;
+  border-color: #198754;
+}
+
+.btn-warning {
+  background: #ffc107;
+  color: #000;
+  border-color: #ffc107;
+}
+
+.btn-sm {
+  padding: 3px 8px;
+  font-size: 12px;
+}
+
+/* Inputs & Forms */
+input[type="text"],
+input[type="password"],
+textarea,
+select {
+  font-family: inherit;
+  font-size: 14px;
+  padding: 6px 10px;
+  border: 1px solid #ced4da;
+  border-radius: 4px;
+  outline: none;
+  background: #ffffff;
+  color: #212529;
+  margin-bottom: 8px;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus,
+textarea:focus {
+  border-color: #86b7fe;
+  box-shadow: 0 0 0 2px rgba(13, 110, 253, 0.25);
+}
+
+label {
+  display: inline-block;
+  font-size: 14px;
+  margin-right: 12px;
+  cursor: pointer;
+}
+
+/* Layouts */
+.row {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+
+.col {
+  flex: 1;
+}
+
+.card-box {
+  border: 1px solid #dee2e6;
+  border-radius: 4px;
+  padding: 14px;
+  margin-bottom: 14px;
+  background: #fafafa;
+}
+
+/* Item Rows */
+.item-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 12px;
+  border: 1px solid #e9ecef;
+  background: #ffffff;
+  border-radius: 4px;
+  margin-bottom: 6px;
+}
+
+/* Products Grid */
+.products-simple-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.product-simple-card {
+  border: 1px solid #ced4da;
+  border-radius: 4px;
+  padding: 12px;
+  background: #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.product-simple-card h4 {
+  font-size: 14px;
+  margin-bottom: 6px;
+}
+
+.product-simple-card .price {
+  font-size: 15px;
+  font-weight: 700;
+  color: #0d6efd;
+  margin-bottom: 8px;
+}
+
+/* Tables */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 12px 0;
+  font-size: 14px;
+}
+
+table, th, td {
+  border: 1px solid #dee2e6;
+}
+
+th, td {
+  padding: 8px 12px;
+  text-align: left;
+}
+
+th {
+  background: #f1f3f5;
+  font-weight: 600;
+}
+
+/* Alerts / Notes */
+.alert {
+  padding: 10px 14px;
+  border-radius: 4px;
+  margin-bottom: 14px;
+  font-size: 13px;
+  border: 1px solid transparent;
+}
+
+.alert-info {
+  background-color: #cff4fc;
+  border-color: #b6effb;
+  color: #055160;
+}
+
+.alert-success {
+  background-color: #d1e7dd;
+  border-color: #badbcc;
+  color: #0f5132;
+}
+
+.alert-warning {
+  background-color: #fff3cd;
+  border-color: #ffecb5;
+  color: #664d03;
+}
+
+.alert-danger {
+  background-color: #f8d7da;
+  border-color: #f5c2c7;
+  color: #842029;
+}
+
+/* Badge */
+.badge {
+  display: inline-block;
+  padding: 2px 6px;
+  font-size: 11px;
+  font-weight: 600;
+  border-radius: 3px;
+  background: #6c757d;
+  color: #ffffff;
+}
+
+.badge-blue { background: #0d6efd; }
+.badge-green { background: #198754; }
+.badge-orange { background: #fd7e14; }
+
+/* Progress */
+.progress-bar-container {
+  background: #e9ecef;
+  border-radius: 4px;
+  height: 16px;
+  overflow: hidden;
+  margin: 8px 0;
+}
+
+.progress-bar-inner {
+  background: #198754;
+  height: 100%;
+  transition: width 0.3s;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  font-size: 13px;
+  color: #6c757d;
+  margin-top: 20px;
+  padding-top: 15px;
+  border-top: 1px solid #dee2e6;
+}
